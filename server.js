@@ -1,0 +1,18 @@
+// server.js
+// where your node app starts
+
+// init project
+const express = require('express');
+const app = express();
+
+app.get('/echo/:what', (req, res) => {
+  res.json({
+    host: req.hostname,
+    queryParams: req.query,
+    echo: req.params.what
+  });
+});
+
+app.listen(process.env.PORT, () => {
+  console.log(`Listening on port ${process.env.PORT}`);
+});
