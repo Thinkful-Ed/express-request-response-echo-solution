@@ -9,7 +9,7 @@ app.get('/echo/:what', (req, res) => {
   res.json({
     host: req.hostname,
     queryParams: req.query,
-    echo: req.params.what
+    params: req.params
   });
 });
 
