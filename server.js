@@ -1,6 +1,3 @@
-// server.js
-// where your node app starts
-
 // init project
 const express = require('express');
 const app = express();
@@ -8,7 +5,7 @@ const app = express();
 app.get('/echo/:what', (req, res) => {
   res.json({
     host: req.hostname,
-    queryParams: req.query,
+    query: req.query,
     params: req.params
   });
 });
