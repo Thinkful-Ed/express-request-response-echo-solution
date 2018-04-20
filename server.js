@@ -7,8 +7,8 @@ const app = express();
 
 app.get('/echo/:what', (req, res) => {
   res.json({
-    hostname: req.hostname,
-    query: req.query,
+    host: req.hostname,
+    queryParams: req.query,
     params: req.params
   });
 });
