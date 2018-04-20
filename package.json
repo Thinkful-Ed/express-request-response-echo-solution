@@ -1,5 +1,5 @@
 {
-  "name": "express-request-response-echo-solution",
+  "name": "my-glitch-app",
   "version": "0.0.1",
   "description": "What am I about?",
   "main": "server.js",
@@ -7,10 +7,13 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.15.2"
+  },
+  "engines": {
+    "node": "6.10.x"
   },
   "repository": {
-    "url": "https://github.com/Thinkful-Ed/express-request-response-echo-solution"
+    "url": "https://glitch.com/edit/#!/welcome-project"
   },
   "license": "MIT",
   "keywords": [
